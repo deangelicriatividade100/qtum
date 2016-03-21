@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="corprincipal">#2a0103</color>
+    <color name="corbranco">#ffffff</color>
+    <color name="corcinza">#7d7a7a</color>
+    <color name="cinzaclaro">#e7e1e1</color>
+
+</resources>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/wrap_resultados"
+        android:paddingLeft="@dimen/padding"
+        android:paddingRight="@dimen/padding"
+        android:paddingTop="@dimen/padding">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/encontre_pessoas"
+            android:text="Encontre pessoas"
+            style="@style/estilo_nome"
+            android:layout_marginBottom="@dimen/margem_bottom_encontre_pessoas"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/foto_pequena"
+            android:layout_below="@id/encontre_pessoas"
+            android:src="@drawable/fotopequena"
+            android:layout_marginTop="@dimen/padding"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/nome"
+            android:text="@string/nome_usuario"
+            android:layout_below="@id/encontre_pessoas"
+            android:layout_toRightOf="@id/foto_pequena"
+            android:layout_marginLeft="@dimen/padding"
+            style="@style/estilo_nome"
+            android:layout_marginTop="@dimen/margem_top_strings_pessoas"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/descricao_profissional"
+            android:text="@string/descricao"
+            android:layout_toRightOf="@id/foto_pequena"
+            android:layout_below="@id/nome"
+            android:layout_marginLeft="@dimen/padding"
+            android:layout_marginTop="@dimen/margem_entre_strings_pessoas"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/adcionar"
+            android:background="@drawable/adcionar"
+            android:layout_below="@id/encontre_pessoas"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/margem_adcionar"
+            android:layout_marginRight="@dimen/margem_adcionar"/>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:background="@color/cinzaclaro"
+            android:layout_below="@id/foto_pequena"
+            android:layout_marginTop="@dimen/padding">
+
+        </View>
+
+
+    </RelativeLayout>
+
+</ScrollView>

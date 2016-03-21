@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/tamanho_action_bar"
+        android:id="@+id/wrap_bar"
+        android:background="@color/corprincipal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/perfil"
+            android:layout_marginLeft="@dimen/margem_compn"
+            style="@style/titulos"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/info_usuario"
+        android:layout_below="@id/wrap_bar">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/foto_usuario"
+            android:layout_marginTop="@dimen/foto_usuario"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/foto"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/usuario"
+            android:layout_below="@id/foto_usuario"
+            android:layout_centerHorizontal="true"
+            android:text="@string/nome_usuario"
+            style="@style/estilo_nome"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/descricao"
+            android:layout_below="@id/usuario"
+            android:layout_centerHorizontal="true"
+            android:text="@string/descricao"
+            style="@style/estilo_nome"/>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/wrap_infos"
+        android:layout_below="@id/info_usuario"
+        android:paddingLeft="@dimen/padding"
+        android:paddingRight="@dimen/padding"
+        android:paddingBottom="@dimen/padding"
+        android:layout_marginTop="@dimen/infos">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/num"
+            android:layout_marginTop="@dimen/margem_top_num"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/num_post"
+                android:text="0"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/num_seguidores"
+                android:layout_marginLeft="@dimen/margem_num"
+                android:layout_marginRight="@dimen/margem_num"
+                android:text="0"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/num_seguindo"
+                android:text="0"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/info_post"
+            android:layout_below="@id/num"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/post_left"
+                android:layout_marginRight="@dimen/post_right"
+                android:id="@+id/postes"
+                android:text="Postes"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/seguidores"
+                android:layout_marginLeft="@dimen/seguidores_left"
+                android:layout_marginRight="@dimen/seguidores_right"
+                android:text="Seguidores"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/seguindo"
+                android:text="Seguindo"/>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tags"
+            android:layout_below="@id/info_post"
+            android:paddingLeft="@dimen/padding"
+            android:paddingRight="@dimen/padding"
+            android:layout_marginTop="@dimen/margem_top_tags">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:id="@+id/view_top"
+                android:background="@color/cinzaclaro" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tag"
+                android:text="tags"
+                android:layout_marginTop="@dimen/margem_tags"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/tag"
+                android:background="@color/cinzaclaro"
+                android:layout_marginTop="@dimen/margem_tags"/>
+        </RelativeLayout>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/campo_txt"
+            android:id="@+id/sua_biografia"
+            android:layout_below="@id/tags"
+            android:gravity="top"
+            android:text="@string/biografia"
+            android:layout_marginTop="@dimen/margem_biogr"
+            style="@style/hint"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/configurar"
+            android:layout_below="@id/sua_biografia"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/margem_configurar"
+            android:src="@drawable/configuracoes"/>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

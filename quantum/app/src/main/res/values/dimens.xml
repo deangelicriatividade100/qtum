@@ -1,0 +1,28 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="tamanho_action_bar">60dp</dimen>
+    <dimen name="padding">5dp</dimen>
+    <dimen name="campo_txt">80dp</dimen>
+    <dimen name="foto_usuario">10dp</dimen>
+    <dimen name="infos">20dp</dimen>
+    <dimen name="margem_top_num">20dp</dimen>
+    <dimen name="margem_num">95dp</dimen>
+    <dimen name="seguidores_left">45dp</dimen>
+    <dimen name="seguidores_right">38dp</dimen>
+    <dimen name="post_left">7dp</dimen>
+    <dimen name="post_right">5dp</dimen>
+    <dimen name="margem_top_tags">20dp</dimen>
+    <dimen name="margem_tags">10dp</dimen>
+    <dimen name="margem_biogr">10dp</dimen>
+    <dimen name="margem_configurar">15dp</dimen>
+    <dimen name="margem_compn">8dp</dimen>
+    <dimen name="tamanho_botoes">60dp</dimen>
+    <dimen name="margem_bottom_encontre_pessoas">20dp</dimen>
+    <dimen name="margem_top_strings_pessoas">15dp</dimen>
+    <dimen name="margem_entre_strings_pessoas">8dp</dimen>
+    <dimen name="margem_adcionar">15dp</dimen>
+
+</resources>

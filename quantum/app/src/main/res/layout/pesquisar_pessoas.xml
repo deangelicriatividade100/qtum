@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/tamanho_action_bar"
+        android:id="@+id/wrap_bar"
+        android:background="@color/corprincipal">
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/icone_pesq"
+        android:background="@drawable/pesquisar"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/margem_compn"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/wrap_botoes"
+        android:layout_below="@id/wrap_bar">
+
+        <View
+            android:id="@+id/divisor"
+            android:layout_width="1dp"
+            android:layout_height="0dp"
+            android:layout_centerInParent="true"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/tamanho_botoes"
+        android:id="@+id/botao_tags"
+        android:text="tags"
+        android:layout_toLeftOf="@id/divisor"
+        android:textColor="@color/corcinza"
+        android:background="@drawable/estado_botoes"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/tamanho_botoes"
+        android:id="@+id/botoes_pessoas"
+        android:text="Pessoas"
+        android:layout_toRightOf="@id/divisor"
+        android:textColor="@color/corcinza"
+        android:background="@drawable/estado_botoes"/>
+
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:id="@+id/view_bottom"
+        android:layout_below="@id/wrap_botoes"
+        android:background="@color/corcinza" >
+
+    </View>
+
+</RelativeLayout>

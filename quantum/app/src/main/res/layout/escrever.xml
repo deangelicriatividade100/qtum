@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/tamanho_action_bar"
+        android:id="@+id/wrap_bar"
+        android:background="@color/corprincipal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/descoberta"
+            style="@style/titulos"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/wrap_bardois"
+        android:layout_below="@id/wrap_bar"
+        android:paddingLeft="@dimen/padding"
+        android:paddingRight="@dimen/padding"
+        android:paddingBottom="@dimen/padding">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/campo_txt"
+        android:id="@+id/sabia"
+        android:gravity="top"
+        android:text="@string/sabia"
+        style="@style/hint"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fonte"
+        android:text="@string/fonte"
+        android:layout_alignParentBottom="true"
+        android:paddingRight="@dimen/padding"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/propria"
+        android:layout_toRightOf="@id/fonte"
+        android:layout_alignParentBottom="true"
+        android:text="@string/propria"/>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
