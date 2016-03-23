@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/tamanho_action_bar"
+        android:id="@+id/wrap_bar"
+        android:background="@color/corprincipal">
+
+
+    </RelativeLayout>
+
+
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_below="@id/wrap_bar"
+           android:paddingLeft="@dimen/padding"
+           android:paddingRight="@dimen/padding">
+
+       <ImageView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:id="@+id/foto_pequena"
+           android:src="@drawable/fotopequena"
+           android:layout_centerHorizontal="true"
+           android:layout_marginTop="@dimen/top_img_principal"
+           android:layout_marginBottom="@dimen/padding"/>
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:id="@+id/usuario"
+           android:layout_below="@id/foto_pequena"
+           android:layout_centerHorizontal="true"
+           android:text="@string/nome_usuario"
+           style="@style/estilo_nome"/>
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:id="@+id/descricao"
+           android:layout_below="@id/usuario"
+           android:layout_centerHorizontal="true"
+           android:text="@string/descricao"
+           style="@style/estilo_nome"
+           android:layout_marginBottom="@dimen/padding"/>
+
+           <View
+               android:layout_width="@dimen/largura_linha"
+               android:layout_height="1dp"
+               android:id="@+id/linhaum"
+               android:background="@color/cinzaclaro"
+               android:layout_centerHorizontal="true"
+               android:layout_below="@id/descricao"
+               android:layout_marginTop="@dimen/padding"/>
+
+       <ImageView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:id="@+id/tag_historia"
+           android:layout_below="@id/linhaum"
+           android:src="@drawable/tag_historia"
+           android:layout_marginTop="@dimen/padding"/>
+
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:id="@+id/curiosidades"
+           android:text="@string/curiosidade"
+           android:layout_below="@+id/tag_historia"
+           android:paddingTop="@dimen/padding"
+           style="@style/hint"/>
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:id="@+id/descoberta"
+           android:paddingTop="@dimen/padding"
+           android:text="hashshjjds"
+           style="@style/descoberta"
+           android:layout_below="@+id/tag_historia"
+           android:layout_alignStart="@id/descricao" />
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:id="@+id/fonte"
+           android:layout_below="@id/curiosidades"
+           android:layout_marginTop="@dimen/padding"
+           android:layout_marginRight="@dimen/padding"
+           android:text="Fonte:"
+           style="@style/hint"
+           android:layout_marginBottom="@dimen/padding"/>
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:id="@+id/propria_fonte"
+           android:text="@string/fonte_propria"
+           android:layout_below="@id/curiosidades"
+           android:layout_marginTop="@dimen/padding"
+           android:layout_toRightOf="@id/fonte"
+           style="@style/descoberta"/>
+
+       <Spinner
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_below="@id/curiosidades"
+           android:layout_toRightOf="@id/propria_fonte"
+           android:layout_marginTop="@dimen/padding">
+
+       </Spinner>
+
+           <View
+               android:layout_width="match_parent"
+               android:layout_height="1dp"
+               android:id="@+id/linhadois"
+               android:background="@color/cinzaclaro"
+               android:layout_centerHorizontal="true"
+               android:layout_below="@id/fonte"
+               android:layout_marginTop="@dimen/padding"
+               android:layout_marginBottom="@dimen/padding"/>
+
+       <ImageView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:id="@+id/ideiaUm"
+           android:layout_below="@id/linhadois"
+           android:src="@drawable/lampada_2"/>
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:id="@+id/numIdeiaUm"
+           android:text="@string/num_ideiaum"
+           android:layout_marginTop="@dimen/padding"
+           android:layout_toRightOf="@id/ideiaUm"
+           android:layout_marginRight="@dimen/padding"
+           android:layout_below="@id/linhadois"/>
+
+       <ImageView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:id="@+id/ideiaDois"
+           android:src="@drawable/lampada"
+           android:layout_below="@id/linhadois"
+           android:layout_toRightOf="@id/ideiaUm"
+           android:layout_marginLeft="@dimen/padding"/>
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:id="@+id/numIdeiaDois"
+               android:text="@string/num_ideiadois"
+               android:layout_marginTop="@dimen/padding"
+               android:layout_toRightOf="@id/ideiaDois"
+               android:layout_marginRight="@dimen/padding"
+               android:layout_below="@id/linhadois"/>
+
+           <ImageView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:id="@+id/comentar"
+               android:src="@drawable/comentar"
+               android:layout_below="@id/linhadois"
+               android:layout_toRightOf="@id/ideiaDois"
+               android:layout_marginTop="@dimen/padding"
+               android:layout_marginLeft="@dimen/padding"/>
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:id="@+id/numIdeiaTres"
+               android:text="@string/comentar"
+               android:layout_marginTop="@dimen/padding"
+               android:layout_toRightOf="@id/comentar"
+               android:layout_marginRight="@dimen/padding"
+               android:layout_below="@id/linhadois"/>
+
+           <ImageButton
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:background="@drawable/mais"
+               android:layout_below="@id/linhadois"
+               android:layout_marginTop="@dimen/padding"
+               android:layout_alignParentRight="true"/>
+
+
+
+       </RelativeLayout>
+
+   </RelativeLayout>
+
+
+</ScrollView>

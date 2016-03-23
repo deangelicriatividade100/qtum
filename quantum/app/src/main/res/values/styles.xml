@@ -32,4 +32,10 @@
         <item name="android:textSize">16sp</item>
     </style>
 
+    <style name="descoberta">
+        <item name="android:textColor">#000</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+
 </resources>

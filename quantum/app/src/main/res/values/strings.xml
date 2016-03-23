@@ -9,5 +9,10 @@
     <string name="nome_usuario">Nome Usuário</string>
     <string name="descricao">Pequena descrição</string>
     <string name="biografia">Biografia</string>
+    <string name="curiosidade">Você sabia que</string>
+    <string name="fonte_propria">Própria</string>
+    <string name="num_ideiaum">0</string>
+    <string name="num_ideiadois">0</string>
+    <string name="comentar">0</string>
 
 </resources>

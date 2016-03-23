@@ -24,5 +24,7 @@
     <dimen name="margem_top_strings_pessoas">15dp</dimen>
     <dimen name="margem_entre_strings_pessoas">8dp</dimen>
     <dimen name="margem_adcionar">15dp</dimen>
+    <dimen name="top_img_principal">25dp</dimen>
+    <dimen name="largura_linha">170dp</dimen>
 
 </resources>
