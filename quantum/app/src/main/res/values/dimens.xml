@@ -26,5 +26,11 @@
     <dimen name="margem_adcionar">15dp</dimen>
     <dimen name="top_img_principal">25dp</dimen>
     <dimen name="largura_linha">170dp</dimen>
+    <dimen name="margem_login">32dp</dimen>
+    <dimen name="altura_btn">60dp</dimen>
+    <dimen name="largura_bnt">352dp</dimen>
+    <dimen name="padding_esqueci">3dp</dimen>
+    <dimen name="padding_social">20dp</dimen>
+    <dimen name="margem_bottom">20dp</dimen>
 
 </resources>

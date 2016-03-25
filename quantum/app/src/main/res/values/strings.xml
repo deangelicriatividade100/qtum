@@ -14,5 +14,7 @@
     <string name="num_ideiaum">0</string>
     <string name="num_ideiadois">0</string>
     <string name="comentar">0</string>
+    <string name="login">Usuário</string>
+    <string name="esqueci">Esqueci minha senha</string>
 
 </resources>

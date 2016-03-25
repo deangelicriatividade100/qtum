@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f5f7f7">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingRight="@dimen/margem_login"
+        android:paddingLeft="@dimen/margem_login"
+        android:layout_centerInParent="true">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/logo"
+            android:src="@drawable/quantum"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/margem_bottom"/>
+
+        <EditText
+            android:layout_width="@dimen/largura_bnt"
+            android:layout_height="@dimen/altura_btn"
+            android:id="@+id/back_user"
+            android:layout_below="@id/logo"
+            android:background="@drawable/back_edt"
+            android:text="@string/login"
+            android:inputType="text"
+            android:gravity="center"
+            style="@style/hint"
+            android:layout_marginBottom="@dimen/padding"/>
+
+        <EditText
+            android:layout_width="@dimen/largura_bnt"
+            android:layout_height="@dimen/altura_btn"
+            android:id="@+id/pass"
+            android:background="@drawable/back_edt"
+            android:layout_below="@id/back_user"
+            android:inputType="textPassword"
+            android:gravity="center"
+            android:text="password"
+            android:layout_marginBottom="@dimen/padding"
+            style="@style/hint"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/esqueci_senha"
+            android:text="@string/esqueci"
+            android:layout_below="@id/pass"
+            android:layout_alignRight="@id/pass"
+            android:layout_marginBottom="@dimen/padding"
+            android:layout_marginTop="@dimen/padding"
+            style="@style/termos_form"/>
+
+        <Button
+            android:layout_width="@dimen/largura_bnt"
+            android:layout_height="@dimen/altura_btn"
+            android:id="@+id/botao_login"
+            android:layout_below="@id/esqueci_senha"
+            style="@style/titulos"
+            android:text="Login"
+            android:layout_marginTop="@dimen/padding"
+            android:layout_marginBottom="@dimen/padding"
+            android:background="@color/corsecundaria"/>
+
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:id="@+id/wrap_termos"
+           android:layout_below="@id/botao_login"
+           android:gravity="center_horizontal"
+           android:layout_marginTop="@dimen/padding"
+           android:layout_marginBottom="@dimen/padding"
+           android:layout_centerHorizontal="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/nao_conta"
+            android:textSize="16sp"
+            android:layout_marginRight="@dimen/padding_esqueci"
+            android:text="Você não tem uma conta?"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cadastre"
+            android:text="Cadastre-se"
+            android:layout_toRightOf="@id/nao_conta"
+            style="@style/termos_form"/>
+
+       </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/wrap_termos"
+            android:layout_marginTop="@dimen/padding_social"
+            android:gravity="center">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_twitter"
+                android:background="@drawable/btn_twitter"
+                android:layout_marginRight="@dimen/padding"/>
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_face"
+                android:layout_toRightOf="@id/btn_twitter"
+                android:background="@drawable/btn_facebook"/>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
