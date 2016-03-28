@@ -12,7 +12,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/voce_sabe"
+            android:text="@string/descoberta"
             style="@style/titulos"
             android:layout_centerVertical="true"/>
 
@@ -27,31 +27,29 @@
         android:paddingRight="@dimen/padding"
         android:paddingBottom="@dimen/padding">
 
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/campo_txt"
-        android:id="@+id/sabia"
-        android:gravity="top"
-        android:text="@string/outra_curiosidade"
-        style="@style/hint"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/campo_txt"
+            android:id="@+id/sabia"
+            android:gravity="top"
+            android:text="@string/outra_curiosidade"
+            style="@style/hint"/>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/fonte"
-        android:text="@string/fonte"
-        android:layout_alignParentBottom="true"
-        android:paddingRight="@dimen/padding"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/fonte"
+            android:text="@string/fonte"
+            android:layout_alignParentBottom="true"
+            android:paddingRight="@dimen/padding"/>
 
-
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/propria"
-        android:layout_toRightOf="@id/fonte"
-        android:layout_alignParentBottom="true"
-        android:text="@string/propria"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/propria"
+            android:layout_toRightOf="@id/fonte"
+            android:layout_alignParentBottom="true"
+            android:text="@string/propria"/>
 
         <Spinner
             android:layout_width="wrap_content"
@@ -65,6 +63,7 @@
 
 
     </RelativeLayout>
+
 
 
 </RelativeLayout>

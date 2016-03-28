@@ -10,11 +10,15 @@
     <string name="descricao">Pequena descrição</string>
     <string name="biografia">Biografia</string>
     <string name="curiosidade">Você sabia que</string>
+    <string name="outra_curiosidade">E você sabia que</string>
+    <string name="voce_sabe">O que você sabe?</string>
     <string name="fonte_propria">Própria</string>
     <string name="num_ideiaum">0</string>
     <string name="num_ideiadois">0</string>
     <string name="comentar">0</string>
     <string name="login">Usuário</string>
     <string name="esqueci">Esqueci minha senha</string>
+    <string name="mensagem">Mensagem</string>
+    <string name="sua_mansagem">Sua mensagem</string>
 
 </resources>

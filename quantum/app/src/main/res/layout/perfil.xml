@@ -155,13 +155,14 @@
                 android:layout_marginTop="@dimen/margem_tags"/>
         </RelativeLayout>
 
-        <EditText
+        <TextView
             android:layout_width="match_parent"
             android:layout_height="@dimen/campo_txt"
             android:id="@+id/sua_biografia"
             android:layout_below="@id/tags"
-            android:gravity="top"
             android:text="@string/biografia"
+            android:paddingLeft="@dimen/padding"
+            android:paddingTop="@dimen/padding"
             android:layout_marginTop="@dimen/margem_biogr"
             style="@style/hint"/>
 

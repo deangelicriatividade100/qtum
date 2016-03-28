@@ -109,15 +109,6 @@
            android:layout_toRightOf="@id/fonte"
            style="@style/descoberta"/>
 
-       <Spinner
-           android:layout_width="wrap_content"
-           android:layout_height="wrap_content"
-           android:layout_below="@id/curiosidades"
-           android:layout_toRightOf="@id/propria_fonte"
-           android:layout_marginTop="@dimen/padding">
-
-       </Spinner>
-
            <View
                android:layout_width="match_parent"
                android:layout_height="1dp"
